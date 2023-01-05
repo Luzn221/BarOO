@@ -21,5 +21,13 @@ public class App {
 
     System.out.print("Quantidade de espetinhos: ");
     bill.barbecue = sc.nextInt();
+
+    System.out.println("Relatorio: ");
+    System.out.printf("Consumo = R$ %.2f%n",bill.feeding());
+    System.out.printf("Couvert = R$ %.2f%n",bill.cover());
+    System.out.printf("Ingresso = R$ %.2f%n",bill.ticket(bill.gender));
+
+    System.out.printf("Valor a pagar = R$ %.2f%n",bill.total());
+    sc.close();
   }
 }
