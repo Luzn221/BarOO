@@ -33,4 +33,10 @@ public class Bill {
   public double total() {
     return feeding() + ticket(gender) + cover();
   }
+
+@Override
+public String toString() {
+    return String.format("Consumo = R$ %.2f%nCouvert = R$ %.2f%nIngresso = R$ %.2f%nValor a pagar = R$ %.2f%n",feeding(),cover(),ticket(gender),total());
+}
+  
 }

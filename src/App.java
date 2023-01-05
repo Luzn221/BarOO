@@ -23,11 +23,14 @@ public class App {
     bill.barbecue = sc.nextInt();
 
     System.out.println("Relatorio: ");
-    System.out.printf("Consumo = R$ %.2f%n",bill.feeding());
-    System.out.printf("Couvert = R$ %.2f%n",bill.cover());
-    System.out.printf("Ingresso = R$ %.2f%n",bill.ticket(bill.gender));
+    /*
+     System.out.printf("Consumo = R$ %.2f%n",bill.feeding());
+     System.out.printf("Couvert = R$ %.2f%n",bill.cover());
+     System.out.printf("Ingresso = R$ %.2f%n",bill.ticket(bill.gender));
+     System.out.printf("Valor a pagar = R$ %.2f%n",bill.total());
+     */
 
-    System.out.printf("Valor a pagar = R$ %.2f%n",bill.total());
+    System.out.println(bill);
     sc.close();
   }
 }
